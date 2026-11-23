@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SlideGrid</string>
+    <string name="app_tagline">Tactile Sliding Number Puzzle</string>
+    <string name="app_version">Version 1.0.0</string>
+
+    <!-- Navigation & Common Actions -->
+    <string name="action_back">Back</string>
+    <string name="action_play">Play Puzzle</string>
+    <string name="action_quick_play">Quick Play (4×4)</string>
+    <string name="action_select_difficulty">Choose Difficulty</string>
+    <string name="action_statistics">Statistics</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_about">About</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_confirm">Confirm</string>
+
+    <!-- Difficulty Screen -->
+    <string name="difficulty_kicker">Choose Your Board</string>
+    <string name="difficulty_heading">Select a Grid Difficulty</string>
+    <string name="difficulty_subtitle">Pick a 3×3, 4×4, or 5×5 board to begin. Slide aligned tiles into the empty recess until every number sits in ascending order.</string>
+    <string name="difficulty_relaxed_label">Relaxed</string>
+    <string name="difficulty_relaxed_title">3 × 3 Grid</string>
+    <string name="difficulty_relaxed_tiles">8 numbered tiles</string>
+    <string name="difficulty_relaxed_desc">Compact 8-tile board ideal for warmups and fast runs.</string>
+    <string name="difficulty_classic_label">Classic</string>
+    <string name="difficulty_classic_title">4 × 4 Grid</string>
+    <string name="difficulty_classic_tiles">15 numbered tiles</string>
+    <string name="difficulty_classic_desc">The iconic 15-puzzle balance of strategy and speed.</string>
+    <string name="difficulty_master_label">Master</string>
+    <string name="difficulty_master_title">5 × 5 Grid</string>
+    <string name="difficulty_master_tiles">24 numbered tiles</string>
+    <string name="difficulty_master_desc">Deep 24-tile challenge requiring row-by-row planning.</string>
+    <string name="no_record_yet">No record yet</string>
+    <string name="selected_label">Selected</string>
+    <string name="choose_label">Choose</string>
+    <string name="start_puzzle_format">Start %1$d×%1$d Puzzle</string>
+
+    <!-- Gameplay Screen -->
+    <string name="label_moves">Moves</string>
+    <string name="label_time">Time</string>
+    <string name="label_placed">Placed</string>
+    <string name="action_undo">Undo</string>
+    <string name="action_pause">Pause</string>
+    <string name="action_resume">Resume</string>
+    <string name="action_restart">Shuffle</string>
+    <string name="sound_on">Sound On</string>
+    <string name="sound_muted">Muted</string>
+    <string name="hint_timer_ready">Timer starts on your first move</string>
+    <string name="hint_tap_slide">Tap aligned tiles to slide rows or columns</string>
+    <string name="confirm_restart_title">Shuffle New Board?</string>
+    <string name="confirm_restart_message">Your current moves and timer for this round will be reset.</string>
+
+    <!-- Pause Screen -->
+    <string name="pause_title">Puzzle Paused</string>
+    <string name="pause_subtitle">Timer is stopped while tiles are hidden.</string>
+    <string name="action_resume_puzzle">Resume Puzzle</string>
+    <string name="action_restart_round">Restart Round</string>
+    <string name="action_main_menu">Main Menu</string>
+
+    <!-- Victory Screen -->
+    <string name="victory_kicker">Puzzle Solved · %1$d × %1$d Grid</string>
+    <string name="victory_title">Board Complete</string>
+    <string name="victory_total_moves">Total Moves</string>
+    <string name="victory_elapsed_time">Elapsed Time</string>
+    <string name="victory_personal_best">Personal Best</string>
+    <string name="victory_record_both">New personal record set for fewest moves and fastest time.</string>
+    <string name="victory_record_moves">New personal record set for fewest moves.</string>
+    <string name="victory_record_time">New personal record set for fastest time.</string>
+    <string name="action_play_again">Play Again</string>
+    <string name="action_view_stats">View Statistics</string>
+
+    <!-- Statistics Screen -->
+    <string name="stats_title">Statistics &amp; Records</string>
+    <string name="stats_games_played">Games Played</string>
+    <string name="stats_games_completed">Completed</string>
+    <string name="stats_completion_rate">Win Rate</string>
+    <string name="stats_total_moves">Total Moves</string>
+    <string name="stats_mode_records">Best Records by Difficulty</string>
+    <string name="stats_best_moves">Best Moves</string>
+    <string name="stats_best_time">Best Time</string>
+    <string name="action_reset_records">Reset All Records</string>
+    <string name="confirm_reset_title">Reset All Statistics?</string>
+    <string name="confirm_reset_message">All personal best moves, fastest times, and lifetime counters will be cleared permanently.</string>
+
+    <!-- Settings Screen -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_audio_section">Audio &amp; Touch</string>
+    <string name="settings_sound_title">Sound Effects</string>
+    <string name="settings_sound_desc">Play tactile audio feedback on tile slides and board completion.</string>
+    <string name="settings_haptics_title">Haptic Feedback</string>
+    <string name="settings_haptics_desc">Gentle vibration pulse on tile slides and solved placements.</string>
+    <string name="settings_theme_section">Appearance</string>
+    <string name="settings_theme_title">Color Theme</string>
+    <string name="settings_theme_dark">Deep Slate (Dark)</string>
+    <string name="settings_theme_light">Alabaster (Light)</string>
+    <string name="settings_theme_system">Follow System</string>
+    <string name="settings_data_section">Storage</string>
+    <string name="settings_clear_data">Clear Saved Data</string>
+
+    <!-- About Screen -->
+    <string name="about_title">About SlideGrid</string>
+    <string name="about_overview">SlideGrid is an offline-first native Android sliding number puzzle built around tactile response, mathematically guaranteed solvable boards, and zero-distraction gameplay.</string>
+    <string name="about_how_to_play_title">How to Play</string>
+    <string name="about_how_to_play_body">1. Choose 3×3 Relaxed, 4×4 Classic, or 5×5 Master.\n2. Tap any tile in the same row or column as the empty recess to slide one or multiple tiles.\n3. Arrange numbers 1 through N in ascending left-to-right order with the empty recess in the bottom-right corner.</string>
+    <string name="about_privacy_title">Privacy &amp; Offline Guarantee</string>
+    <string name="about_privacy_body">SlideGrid operates 100% offline. It requests zero device permissions, makes zero network connections, and stores only your local game records and preferences on your device.</string>
+</resources>

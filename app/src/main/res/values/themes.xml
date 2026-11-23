@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.SlideGrid" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/accent_amber</item>
+        <item name="colorOnPrimary">@color/accent_amber_dark</item>
+        <item name="colorSecondary">@color/emerald_400</item>
+        <item name="colorSurface">@color/light_bg_surface</item>
+        <item name="colorOnSurface">@color/light_text_primary</item>
+        <item name="android:colorBackground">@color/light_bg_arena</item>
+        <item name="colorOnBackground">@color/light_text_primary</item>
+        <item name="android:statusBarColor">@color/light_bg_arena</item>
+        <item name="android:navigationBarColor">@color/light_bg_arena</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <style name="Theme.SlideGrid.Splash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/bg_arena</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_launcher_foreground</item>
+        <item name="postSplashScreenTheme">@style/Theme.SlideGrid</item>
+    </style>
+</resources>

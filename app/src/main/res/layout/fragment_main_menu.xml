@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/surface_arena"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingHorizontal="24dp"
+        android:paddingVertical="32dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxWidth="460dp"
+            android:orientation="vertical">
+
+            <!-- Brand Header -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="24dp">
+
+                <ImageView
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:background="@drawable/bg_icon_badge"
+                    android:contentDescription="@string/app_name"
+                    android:padding="4dp"
+                    android:src="@drawable/ic_launcher_foreground" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="14dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/app_name"
+                        android:textColor="@color/ink_primary"
+                        android:textSize="28sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/app_tagline"
+                        android:textColor="@color/ink_muted"
+                        android:textSize="13sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Summary Card -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_card_default"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/difficulty_kicker"
+                    android:textColor="@color/accent_amber"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textMenuSummary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:fontFamily="monospace"
+                    android:textColor="@color/ink_secondary"
+                    android:textSize="13sp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnSelectDifficulty"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:layout_marginTop="18dp"
+                    android:text="@string/action_select_difficulty"
+                    android:textAllCaps="false"
+                    android:textColor="@color/accent_amber_dark"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    app:backgroundTint="@color/accent_amber"
+                    app:cornerRadius="12dp"
+                    app:icon="@drawable/ic_play"
+                    app:iconTint="@color/accent_amber_dark" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnQuickPlay"
+                    style="@style/Widget.Material3.Button.OutlinedButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/action_quick_play"
+                    android:textAllCaps="false"
+                    android:textColor="@color/ink_primary"
+                    android:textSize="14sp"
+                    app:cornerRadius="12dp"
+                    app:strokeColor="@color/stroke_strong" />
+            </LinearLayout>
+
+            <!-- Secondary Navigation -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnStats"
+                    style="@style/Widget.Material3.Button.OutlinedButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:gravity="start|center_vertical"
+                    android:text="@string/action_statistics"
+                    android:textAllCaps="false"
+                    android:textColor="@color/ink_primary"
+                    app:backgroundTint="@color/surface_card"
+                    app:cornerRadius="12dp"
+                    app:icon="@drawable/ic_trophy"
+                    app:iconPadding="12dp"
+                    app:iconTint="@color/accent_amber"
+                    app:strokeColor="@color/stroke_subtle" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnSettings"
+                    style="@style/Widget.Material3.Button.OutlinedButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="start|center_vertical"
+                    android:text="@string/action_settings"
+                    android:textAllCaps="false"
+                    android:textColor="@color/ink_primary"
+                    app:backgroundTint="@color/surface_card"
+                    app:cornerRadius="12dp"
+                    app:icon="@drawable/ic_settings"
+                    app:iconPadding="12dp"
+                    app:iconTint="@color/ink_secondary"
+                    app:strokeColor="@color/stroke_subtle" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnAbout"
+                    style="@style/Widget.Material3.Button.OutlinedButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="start|center_vertical"
+                    android:text="@string/action_about"
+                    android:textAllCaps="false"
+                    android:textColor="@color/ink_primary"
+                    app:backgroundTint="@color/surface_card"
+                    app:cornerRadius="12dp"
+                    app:icon="@drawable/ic_info"
+                    app:iconPadding="12dp"
+                    app:iconTint="@color/ink_secondary"
+                    app:strokeColor="@color/stroke_subtle" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

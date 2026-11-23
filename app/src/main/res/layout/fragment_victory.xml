@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/surface_arena"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_card_default"
+            android:maxWidth="420dp"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textVictoryKicker"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/emerald_400"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="@string/victory_title"
+                        android:textColor="@color/ink_primary"
+                        android:textSize="26sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/bg_icon_badge"
+                    android:contentDescription="@string/victory_title"
+                    android:padding="11dp"
+                    android:src="@drawable/ic_trophy"
+                    app:tint="@color/accent_amber" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textNewRecordBanner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:textColor="@color/accent_amber"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="16dp"
+                android:background="@color/stroke_subtle" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/victory_total_moves"
+                        android:textColor="@color/ink_muted"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/textVictoryMoves"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:fontFamily="monospace"
+                        android:textColor="@color/ink_primary"
+                        android:textSize="26sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textBestMovesTag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/victory_personal_best"
+                        android:textColor="@color/accent_amber"
+                        android:textSize="12sp"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/victory_elapsed_time"
+                        android:textColor="@color/ink_muted"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/textVictoryTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:fontFamily="monospace"
+                        android:textColor="@color/ink_primary"
+                        android:textSize="26sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textBestTimeTag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/victory_personal_best"
+                        android:textColor="@color/accent_amber"
+                        android:textSize="12sp"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="16dp"
+                android:background="@color/stroke_subtle" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnPlayAgain"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:text="@string/action_play_again"
+                android:textAllCaps="false"
+                android:textColor="@color/accent_amber_dark"
+                android:textStyle="bold"
+                app:backgroundTint="@color/accent_amber"
+                app:cornerRadius="12dp"
+                app:icon="@drawable/ic_restart"
+                app:iconTint="@color/accent_amber_dark" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnChangeDifficulty"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/action_select_difficulty"
+                android:textAllCaps="false"
+                android:textColor="@color/ink_primary"
+                app:cornerRadius="12dp"
+                app:strokeColor="@color/stroke_strong" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnViewStats"
+                style="@style/Widget.Material3.Button.TextButton"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/action_view_stats"
+                android:textAllCaps="false"
+                android:textColor="@color/ink_secondary" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnMainMenu"
+                style="@style/Widget.Material3.Button.TextButton"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:text="@string/action_main_menu"
+                android:textAllCaps="false"
+                android:textColor="@color/ink_muted" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

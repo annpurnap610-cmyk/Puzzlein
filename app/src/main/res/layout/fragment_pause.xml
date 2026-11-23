@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/surface_arena"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_card_default"
+            android:gravity="center_horizontal"
+            android:maxWidth="400dp"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <ImageView
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:background="@drawable/bg_icon_badge"
+                android:contentDescription="@string/pause_title"
+                android:padding="12dp"
+                android:src="@drawable/ic_pause"
+                app:tint="@color/accent_amber" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/pause_title"
+                android:textColor="@color/ink_primary"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:gravity="center"
+                android:text="@string/pause_subtitle"
+                android:textColor="@color/ink_muted"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/textPauseStats"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:fontFamily="monospace"
+                android:textColor="@color/ink_secondary"
+                android:textSize="13sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnResume"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="22dp"
+                android:text="@string/action_resume_puzzle"
+                android:textAllCaps="false"
+                android:textColor="@color/accent_amber_dark"
+                android:textStyle="bold"
+                app:backgroundTint="@color/accent_amber"
+                app:cornerRadius="12dp"
+                app:icon="@drawable/ic_play"
+                app:iconTint="@color/accent_amber_dark" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnRestartRound"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/action_restart_round"
+                android:textAllCaps="false"
+                android:textColor="@color/ink_primary"
+                app:cornerRadius="12dp"
+                app:icon="@drawable/ic_restart"
+                app:iconTint="@color/ink_primary"
+                app:strokeColor="@color/stroke_strong" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnChangeDifficulty"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/action_select_difficulty"
+                android:textAllCaps="false"
+                android:textColor="@color/ink_primary"
+                app:cornerRadius="12dp"
+                app:strokeColor="@color/stroke_subtle" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSettings"
+                style="@style/Widget.Material3.Button.TextButton"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/action_settings"
+                android:textAllCaps="false"
+                android:textColor="@color/ink_secondary" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnMainMenu"
+                style="@style/Widget.Material3.Button.TextButton"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:text="@string/action_main_menu"
+                android:textAllCaps="false"
+                android:textColor="@color/ink_muted" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

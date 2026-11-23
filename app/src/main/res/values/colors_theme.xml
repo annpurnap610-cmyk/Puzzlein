@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="surface_arena">#F8FAFC</color>
+    <color name="surface_card">#FFFFFF</color>
+    <color name="surface_elevated">#F1F5F9</color>
+    <color name="stroke_subtle">#E2E8F0</color>
+    <color name="stroke_strong">#CBD5E1</color>
+    <color name="ink_primary">#0F172A</color>
+    <color name="ink_secondary">#334155</color>
+    <color name="ink_muted">#64748B</color>
+    <color name="board_tray">#E2E8F0</color>
+    <color name="board_recess">#CBD5E1</color>
+</resources>

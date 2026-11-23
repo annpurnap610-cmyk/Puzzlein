@@ -1,0 +1,6 @@
+{
+  "name": "SlideGrid",
+  "description": "A tactile sliding number puzzle game with 3x3, 4x4, and 5x5 difficulty modes.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}

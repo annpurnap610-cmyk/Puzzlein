@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Core SlideGrid Dark Slate Palette (60-30-10) -->
+    <color name="bg_arena">#020617</color>
+    <color name="bg_surface">#0F172A</color>
+    <color name="bg_surface_elevated">#1E293B</color>
+    <color name="border_subtle">#1E293B</color>
+    <color name="border_card">#334155</color>
+
+    <!-- Text Hierarchy -->
+    <color name="text_primary">#F8FAFC</color>
+    <color name="text_secondary">#CBD5E1</color>
+    <color name="text_muted">#94A3B8</color>
+
+    <!-- Primary Accent (Amber / Gold) -->
+    <color name="accent_amber">#FBBF24</color>
+    <color name="accent_amber_pressed">#F59E0B</color>
+    <color name="accent_amber_dark">#020617</color>
+
+    <!-- Tile & Correct-Position Feedback -->
+    <color name="tile_surface">#F1F5F9</color>
+    <color name="tile_border">#E2E8F0</color>
+    <color name="tile_text">#0F172A</color>
+    <color name="tile_correct_surface">#ECFDF5</color>
+    <color name="tile_correct_border">#6EE7B7</color>
+    <color name="tile_correct_dot">#059669</color>
+    <color name="tile_slot_empty">#090F1E</color>
+
+    <!-- Semantic Colors -->
+    <color name="emerald_400">#34D399</color>
+    <color name="emerald_500">#10B981</color>
+    <color name="danger_red">#F87171</color>
+
+    <!-- Light Theme Variants (when Light theme selected in Settings) -->
+    <color name="light_bg_arena">#F8FAFC</color>
+    <color name="light_bg_surface">#FFFFFF</color>
+    <color name="light_bg_surface_elevated">#F1F5F9</color>
+    <color name="light_border_subtle">#E2E8F0</color>
+    <color name="light_text_primary">#0F172A</color>
+    <color name="light_text_secondary">#334155</color>
+    <color name="light_text_muted">#64748B</color>
+
+    <!-- Adaptive Icon Background -->
+    <color name="ic_launcher_background">#0F172A</color>
+</resources>
